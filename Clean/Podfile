@@ -1,0 +1,15 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Clean' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  pod 'SVProgressHUD'
+  pod 'IQKeyboardManager'
+  pod 'FMDB', '~> 2.6.2'
+  pod 'OpenCV2', '~> 4.3.0'
+  pod 'BiometricAuthentication'
+
+
+end

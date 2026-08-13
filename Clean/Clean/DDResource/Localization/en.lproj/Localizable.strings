@@ -1,0 +1,113 @@
+/* 
+  Localizable.strings
+
+  
+*/
+
+"DDContacts" = "Contacts";
+// - Settings
+"DDSettings" = "Settings";
+"DDPRIVACY_SETTINGS" = "PRIVACY SETTINGS";
+"DDRemove_After_Import_Album" = "Remove After Import(Album)";
+"DDRemove_After_Import_Contacts" = "Remove After Import(Contacts)";
+"DDGo_to_Settings" = "Go to Settings";
+"DDError" = "Error";
+"DDSuccess" = "Success";
+"DDFail" = "Fail";
+
+
+// - Privacy
+"DDPrivacy" = "Privacy";
+"DDSecret_Album" = "Secret Album";
+"DDImport_your_private_photos_and_videos" = "Import your private photos and videos";
+"DDSecret_Contacts" = "Secret Contacts";
+"DDYour_Private_Contacts" = "Your Private Contacts";
+"No_Secret_Files" = "No Secret Files";
+"DDTap_Add_button_to_add_secret" = "Tap \"Add\"button to add secret photos and videos.";
+"DDAdd" = "Add";
+"DDRemove_After_Import" = "Remove After Import?";
+"DDSelect_Remove_to_delete_the_imported_files" = "Select Remove to delete the imported files from Photos.This will also apply to your next import sessions and can be changed in Settings.";
+"DDRemove" = "Remove";
+"DDDo_not_remove" = "Do not remove";
+"DDEdit" = "Edit";
+"DDCancel" = "Cancel";
+"DDSelect_All" = "Select All";
+"DDDeselect_All" = "Deselect All";
+"DDDelete" = "Delete";
+"DDShare" = "Share";
+"DDNo_Secret_Contacts" = "No Secret Contacts";
+"DDTap_Add_button_to_add_contacts" = "Tap \"Add\" button to add contacts";
+"DDSelect_Remove_to_delete_imported_contacts_from_your_address" = "Select Remove to delete imported contacts from your address book.This will also apply to your next import sessions and can be changed in Settings.";
+"DDSearch" = "Search";
+
+
+
+
+// - Clean
+"DDNo_contact_permissions" = "No contact permissions";
+"DDPlease_allow_the_use_of_your_contacts" = "Please allow the use of your contacts in \"Settings -> This APP -> Contacts\"";
+"DDSetting" = "Setting";
+
+"DDavailable" = "available";
+"DDBIGCLEAN" = "CLEAN";
+"DDClean" = "Clean";
+"DDCalendar" = "Calendar";
+"DDPhotos" = "Photos";
+"DDVideos" = "Videos";
+"DDold_event_s" = "old event (s)";
+"DDduplicate_s" = "duplicate (s)";
+"DDNo_permission_to_use_the_album" = "No permission to use the album";
+"DDCleaning_Result" = "Cleaning Result";
+"DDEvents" = "Events";
+"DDSimilar" = "Similar";
+"DDDuplicate" = "Duplicate";
+"DDScreenshots" = "Screenshots";
+"DDBlurry" = "Blurry";
+"DDScreen_Recordings" = "Screen Recordings";
+"DDShort_Recordings" = "Short Recordings";
+"DDIncomplete" = "Incomplete";
+"DDPast" = "Past";
+"DDitems" = "items";
+"DDNothing_to_clean_here" = "Nothing to clean here.";
+"DDAnalyzing_similar_photos" = "Analyzing similar photos...";
+"DDAnalyzing_duplicate_photos" = "Analyzing duplicate photos...";
+"DDAnalyzing_screenshot_photos" = "Analyzing screenshot photos...";
+"DDAnalyzing_blurry_photos" = "Analyzing blurry photos...";
+"DDAnalyzing_duplicate_videos" = "Analyzing duplicate videos...";
+"DDAnalyzing_screen_recording_videos" = "Analyzing screen recording videos...";
+"DDAnalyzing_short_recording_videos" = "Analyzing short recording videos...";
+"DDAnalyzing_duplicate_contacts" = "Analyzing duplicate contacts...";
+"DDAnalyzing_incomplete_contacts" = "Analyzing incomplete contacts...";
+"DDAnalyzing_past_events" = "Analyzing past events...";
+"DDCongratulations" = "Congratulations!";
+"DDYou_have_deleted" = "You have deleted";
+"DDSave" = "Save";
+"DDMinutes" = "Minutes";
+"DDusing_Clean_up" = "using Clean up";
+"DDEmpty_Recently_Deleted_Album_on_your" = "Empty \"Recently Deleted\" Album on your iPhone to free up";
+"DDspace" = "space";
+"DDGreat" = "Great";
+"DDNothing_to_clean_here" = "Nothing to clean here.";
+"DDNames_Numbers_Emails" = "Names, Numbers, Emails";
+"DDNo_Names_No_Numbers_No_Emails" = "No Names, No Numbers, No Emails";
+"DDAll_Contacts" = "All Contacts";
+"DDNo_contacts_to_organize" = "No contacts to organize.";
+"DDMerge" = "Merge";
+"DDOnce_merged_it_canno_be_reversed" = "Once merged, it cannot be reversed";
+"DDSelected_Contacts" = "Selected Contacts";
+"DDItems_will_be_removed_from_the_Contacts" = "Items will be removed from the Contacts";
+"DDDelete_contacts" = "Delete contacts";
+
+
+// - Calendar
+"DDCalendar" = "Calendar";
+
+"DDSmallevents" = "events";
+"DDSelected_events" = "Selected events";
+"DDItems_will_be_removed_from_the_Calendar" = "Items will be removed from the Calendar";
+
+
+
+//- 通用
+"year" = "year";
+"week" = "week";

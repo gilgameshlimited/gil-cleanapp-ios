@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DDPhotoDetailController" customModule="Clean" customModuleProvider="target">
+            <connections>
+                <outlet property="shareBtn" destination="fQD-H8-Q9R" id="sOH-Re-GeT"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rW8-Ka-oOz">
+                    <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xbB-JI-feT">
+                            <rect key="frame" x="10" y="2" width="40" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="40" id="PmR-3m-ibu"/>
+                                <constraint firstAttribute="height" constant="40" id="ax8-wd-miy"/>
+                            </constraints>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" image="common_close"/>
+                            <connections>
+                                <action selector="closeClick:" destination="-1" eventType="touchUpInside" id="VvH-sE-GFG"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fQD-H8-Q9R">
+                            <rect key="frame" x="335" y="2" width="42" height="40"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="40" id="UK7-Lp-nE0"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="Share">
+                                <color key="titleColor" red="0.2196078431372549" green="0.38823529411764707" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </state>
+                            <connections>
+                                <action selector="shareClick:" destination="-1" eventType="touchUpInside" id="2fa-uf-uHl"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="xbB-JI-feT" firstAttribute="leading" secondItem="rW8-Ka-oOz" secondAttribute="leading" constant="10" id="F5N-sp-XbZ"/>
+                        <constraint firstItem="fQD-H8-Q9R" firstAttribute="centerY" secondItem="rW8-Ka-oOz" secondAttribute="centerY" id="Zq9-b1-pNQ"/>
+                        <constraint firstAttribute="height" constant="44" id="lRZ-8S-pIR"/>
+                        <constraint firstItem="xbB-JI-feT" firstAttribute="centerY" secondItem="rW8-Ka-oOz" secondAttribute="centerY" id="tHm-8F-Z3G"/>
+                        <constraint firstAttribute="trailing" secondItem="fQD-H8-Q9R" secondAttribute="trailing" constant="16" id="yYd-JG-Okq"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" red="0.92156862745098034" green="0.95294117647058818" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="rW8-Ka-oOz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="AwI-K0-erP"/>
+                <constraint firstItem="rW8-Ka-oOz" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="Wrp-ZS-2Er"/>
+                <constraint firstItem="rW8-Ka-oOz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="bX1-jt-fXh"/>
+            </constraints>
+            <point key="canvasLocation" x="106" y="-12"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="common_close" width="22" height="22"/>
+    </resources>
+</document>

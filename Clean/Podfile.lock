@@ -1,0 +1,36 @@
+PODS:
+  - BiometricAuthentication (3.1.3)
+  - FMDB (2.6.2):
+    - FMDB/standard (= 2.6.2)
+  - FMDB/standard (2.6.2)
+  - IQKeyboardManager (6.5.19)
+  - OpenCV2 (4.3.0)
+  - SVProgressHUD (2.3.1):
+    - SVProgressHUD/Core (= 2.3.1)
+  - SVProgressHUD/Core (2.3.1)
+
+DEPENDENCIES:
+  - BiometricAuthentication
+  - FMDB (~> 2.6.2)
+  - IQKeyboardManager
+  - OpenCV2 (~> 4.3.0)
+  - SVProgressHUD
+
+SPEC REPOS:
+  trunk:
+    - BiometricAuthentication
+    - FMDB
+    - IQKeyboardManager
+    - OpenCV2
+    - SVProgressHUD
+
+SPEC CHECKSUMS:
+  BiometricAuthentication: b63d51be9260ba94165e032829ae78f074b129df
+  FMDB: 854a0341b4726e53276f2a8996f06f1b80f9259a
+  IQKeyboardManager: c8665b3396bd0b79402b4c573eac345a31c7d485
+  OpenCV2: ffe82e5cb5d16dc3fc01a5f4127b9a5b3cfc7d1b
+  SVProgressHUD: 4837c74bdfe2e51e8821c397825996a8d7de6e22
+
+PODFILE CHECKSUM: f9f8776f18b4cb30a1fa7f61523c34c15b99eadc
+
+COCOAPODS: 1.16.2

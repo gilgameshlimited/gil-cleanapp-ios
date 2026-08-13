@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="250" id="KGk-i7-Jjw" customClass="DDDuplicateContactsGroupCell" customModule="Clean" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="395" height="250"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="395" height="250"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vgA-fs-0er">
+                        <rect key="frame" x="16" y="8" width="363" height="234"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DwS-DP-3tx">
+                                <rect key="frame" x="16" y="11.999999999999998" width="255" height="19.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AzA-t7-FRS">
+                                <rect key="frame" x="16" y="167" width="118" height="51"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.38823529411764707" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="Okb-fP-efV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Preview"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="previewClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="BbG-9C-bae"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="V3y-Rx-Pkg">
+                                <rect key="frame" x="146" y="167" width="201" height="51"/>
+                                <color key="backgroundColor" red="0.2196078431372549" green="0.38823529411764707" blue="1" alpha="0.5" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="51" id="tph-Fq-dic"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Merge 0 Contacts"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25.5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="mergeClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="6KU-eb-Zgx"/>
+                                </connections>
+                            </button>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="hAI-qP-4Wr">
+                                <rect key="frame" x="16" y="37.333333333333336" width="331" height="103.66666666666666"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHV-GE-ORw">
+                                <rect key="frame" x="281" y="6.6666666666666643" width="66" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="JW2-nB-nwb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Select all">
+                                    <color key="titleColor" red="0.2196078431372549" green="0.38823529411764707" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <state key="selected" title="Deselect all"/>
+                                <connections>
+                                    <action selector="selectClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="0DL-hM-ZZG"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="DwS-DP-3tx" firstAttribute="top" secondItem="vgA-fs-0er" secondAttribute="top" constant="12" id="DGG-4J-uKe"/>
+                            <constraint firstItem="IHV-GE-ORw" firstAttribute="centerY" secondItem="DwS-DP-3tx" secondAttribute="centerY" id="Hfb-nf-D9e"/>
+                            <constraint firstAttribute="bottom" secondItem="V3y-Rx-Pkg" secondAttribute="bottom" constant="16" id="K7M-Yq-7KV"/>
+                            <constraint firstAttribute="trailing" secondItem="hAI-qP-4Wr" secondAttribute="trailing" constant="16" id="MMf-8O-3QD"/>
+                            <constraint firstAttribute="trailing" secondItem="IHV-GE-ORw" secondAttribute="trailing" constant="16" id="Mgp-3r-tfo"/>
+                            <constraint firstItem="V3y-Rx-Pkg" firstAttribute="leading" secondItem="AzA-t7-FRS" secondAttribute="trailing" constant="12" id="TWU-DI-qzv"/>
+                            <constraint firstItem="hAI-qP-4Wr" firstAttribute="leading" secondItem="vgA-fs-0er" secondAttribute="leading" constant="16" id="UPo-TX-0Qk"/>
+                            <constraint firstAttribute="bottom" secondItem="AzA-t7-FRS" secondAttribute="bottom" constant="16" id="WGl-Y4-Pza"/>
+                            <constraint firstItem="AzA-t7-FRS" firstAttribute="leading" secondItem="vgA-fs-0er" secondAttribute="leading" constant="16" id="apf-g2-wrk"/>
+                            <constraint firstItem="V3y-Rx-Pkg" firstAttribute="width" secondItem="AzA-t7-FRS" secondAttribute="width" multiplier="1.7" id="b5y-jN-7DI"/>
+                            <constraint firstItem="IHV-GE-ORw" firstAttribute="leading" secondItem="DwS-DP-3tx" secondAttribute="trailing" constant="10" id="fjj-xy-TIb"/>
+                            <constraint firstItem="AzA-t7-FRS" firstAttribute="top" secondItem="hAI-qP-4Wr" secondAttribute="bottom" constant="26" id="mYw-hA-wMt"/>
+                            <constraint firstItem="DwS-DP-3tx" firstAttribute="leading" secondItem="vgA-fs-0er" secondAttribute="leading" constant="16" id="oIF-45-xeo"/>
+                            <constraint firstAttribute="trailing" secondItem="V3y-Rx-Pkg" secondAttribute="trailing" constant="16" id="pAK-LR-ExA"/>
+                            <constraint firstItem="hAI-qP-4Wr" firstAttribute="top" secondItem="DwS-DP-3tx" secondAttribute="bottom" constant="6" id="poa-58-IX8"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="vgA-fs-0er" secondAttribute="bottom" constant="8" id="1H8-nw-QhM"/>
+                    <constraint firstItem="vgA-fs-0er" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="8QY-2z-wjb"/>
+                    <constraint firstAttribute="trailing" secondItem="vgA-fs-0er" secondAttribute="trailing" constant="16" id="HXu-H5-Bqt"/>
+                    <constraint firstItem="vgA-fs-0er" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="YRa-hc-Tha"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <connections>
+                <outlet property="mergeBtn" destination="V3y-Rx-Pkg" id="Fnn-N1-YV5"/>
+                <outlet property="previewBtn" destination="AzA-t7-FRS" id="aUp-xd-H4g"/>
+                <outlet property="selBtn" destination="IHV-GE-ORw" id="LIl-AZ-oCz"/>
+                <outlet property="tableView" destination="hAI-qP-4Wr" id="g7Z-Aa-qRa"/>
+                <outlet property="titleLab" destination="DwS-DP-3tx" id="sVq-qa-ijx"/>
+            </connections>
+            <point key="canvasLocation" x="119.84732824427481" y="61.267605633802823"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

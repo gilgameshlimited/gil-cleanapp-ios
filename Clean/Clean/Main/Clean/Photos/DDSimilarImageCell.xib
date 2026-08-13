@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DDSimilarImageCell" customModule="Clean" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="192" height="155"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="192" height="155"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kgf-Li-WkN">
+                        <rect key="frame" x="0.0" y="0.0" width="192" height="155"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="via-Al-fHz">
+                                <rect key="frame" x="0.0" y="0.0" width="192" height="155"/>
+                            </imageView>
+                            <button hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EcQ-Oq-kTC">
+                                <rect key="frame" x="166" y="129" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="2ek-g9-pZX"/>
+                                    <constraint firstAttribute="width" constant="20" id="OZb-qi-LEg"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="clean_img_unsel"/>
+                                <state key="selected" image="clean_img_sel"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="EcQ-Oq-kTC" secondAttribute="trailing" constant="6" id="8Zq-wh-UTR"/>
+                            <constraint firstAttribute="bottom" secondItem="EcQ-Oq-kTC" secondAttribute="bottom" constant="6" id="RAp-YL-NhR"/>
+                            <constraint firstItem="via-Al-fHz" firstAttribute="top" secondItem="kgf-Li-WkN" secondAttribute="top" id="Y2n-Jq-9Yd"/>
+                            <constraint firstAttribute="bottom" secondItem="via-Al-fHz" secondAttribute="bottom" id="jhh-m3-Lwa"/>
+                            <constraint firstAttribute="trailing" secondItem="via-Al-fHz" secondAttribute="trailing" id="m3j-Z2-izY"/>
+                            <constraint firstItem="via-Al-fHz" firstAttribute="leading" secondItem="kgf-Li-WkN" secondAttribute="leading" id="shp-a2-2nb"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.5"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="8"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="kgf-Li-WkN" secondAttribute="trailing" id="1Ry-XR-sGz"/>
+                <constraint firstItem="kgf-Li-WkN" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="3o4-F4-coK"/>
+                <constraint firstAttribute="bottom" secondItem="kgf-Li-WkN" secondAttribute="bottom" id="gsz-eF-bOh"/>
+                <constraint firstItem="kgf-Li-WkN" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="pGI-mT-PNW"/>
+            </constraints>
+            <size key="customSize" width="192" height="155"/>
+            <connections>
+                <outlet property="imgView" destination="via-Al-fHz" id="yaU-tE-QyN"/>
+                <outlet property="selBtn" destination="EcQ-Oq-kTC" id="bGm-EL-KtL"/>
+            </connections>
+            <point key="canvasLocation" x="170.99236641221373" y="24.295774647887324"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="clean_img_sel" width="20" height="20"/>
+        <image name="clean_img_unsel" width="20" height="20"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
